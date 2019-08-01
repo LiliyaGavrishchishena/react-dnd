@@ -1,68 +1,27 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In order to strt the project you should:
+1. git clone https://
+2. yarn start
 
-## Available Scripts
+Web App Project
+Общие требования к проекту
+В рамках финального проекта нужно самостоятельно написать приложение, свое или предложенное ниже, с использованием React/Redux. Это должно быть SPA, т.е. все страницы должны быть реализованы с помощью React Router-a.
 
-In the project directory, you can run:
+Приложение должно иметь как минимум 2 скрипта в package.json: start для запуска дев окружения (webpack-dev-server) и прод сборку с минимизацией файлов - build скрипт. Можно использовать create-react-app, но написание своего webpack конфига будет плюсом.
 
-### `npm start`
+Сдать нужно ссылку на репозиторий, в которой финальная рабочая версия будет в ветке master. Если есть ньюансы запуска или сборки, их нужно описать в README. Если README не будет или будет пустым, проверяющая команда будет делать только npm install и npm run build / npm start
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+При реализации своего проекта по сложности стоит ориентироваться на предложенный проект и подбирать функционал соответственно.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Конструктор форм
+Нужно реализовать конструктор форм с последующей возможностью их заполнения. Приложению будут нужны следующие странички
 
-### `npm test`
+Список всех форм, с кол-вом полей внутри и кол-вом людей заполнивших эту форму. Здесь можно
+Создать новую форму (отдельная страничка - Конструктор)
+Отредактировать существующую форму, но только если ее еще никто не заполнял (отдельная страничка - Конструктор)
+Просмотреть все заполнения формы (отдельная страничка)
+Конструктор форм. Тут можно создать новую форму или отредактировать существующую (возможно это будут 2 разных странички). На фронте должно быть ограничение в 15 полей на форму. Пользователь должен иметь возможность в любом порядке добавлять поля в форму, удалять их и перемещать местами. В конце по нажатию на кнопку создания/сохранения нужно отправлять изменения на сервер.
+Просмотр заполнений форм. Тут в виде таблички нужно отображать список всех тех, кто заполнил форму. Учесть, что заполнений может может быть много и их придется подгружать динамически.
+Страница для заполнения формы. Здесь нужно отрисовать минимальный интерфейс, без возможности попасть в остальные части приложения (как если бы мы хотели отправить кому-то сылку для заполнения). В ссылке должен присутствовать айди формы, по которому мы и сможем подгрузить и отрисовать поля этой формы. После заполнения нужно показать модалку, о том, что данные успешно сохранены
+Примеры запросов и ответов можно посмотреть в папке api. Все эти запросы следует делать на forms-app.brutgroot.com/[username], где username - ваш уникальный логин (например в телеграмме). Например, для получения списка всех форм (/forms/list) юзеру shpax стоит делать запрос на http://forms-app.brutgroot.com/shpax/forms/list. Также, в репе есть Postman-коллекция этих запросов
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Чтобы не делать всю верстку самостоятельно, предлагаю использовать material-ui
