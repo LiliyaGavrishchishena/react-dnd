@@ -6,7 +6,7 @@ import routes from '../configs/routes';
 import navItems from '../configs/main-nav';
 
 // components
-import AppNav from './AppNav';
+import NavBar from './NavBar';
 import ConstructorPage from '../pages/ConstructorPage';
 import ResultsPage from '../pages/ResultsPage';
 import FormPage from '../pages/FormPage';
@@ -17,7 +17,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <AppNav items={navItems} />
+        <NavBar items={navItems} />
 
         <Switch>
           <Route exact path={routes.CONSTRUCTOR} component={ConstructorPage} />
