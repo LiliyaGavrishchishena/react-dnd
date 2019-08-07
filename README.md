@@ -1,5 +1,5 @@
 
-###In order to start the project:
+### In order to start the project:
 - git clone https://github.com/LiliyaGavrishchishena/react-dnd.git
 - yarn install
 - yarn start
