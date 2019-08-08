@@ -3,10 +3,10 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
 // reducers
-import reducer from '../redux/reducer';
+import formsReducer from '../redux/formsReducer';
 
 const rootReducer = combineReducers({
-  forms: reducer,
+  forms: formsReducer,
 });
 
 const middlewares = applyMiddleware(thunk);

@@ -1,3 +1,3 @@
-export { default as actions } from './actions';
-export { default as operations } from './operations';
-export { default as selectors } from './selectors';
+export { default as formsActions } from './formsActions';
+export { default as formsOperations } from './formsOperations';
+export { default as formsSelectors } from './formsSelectors';
