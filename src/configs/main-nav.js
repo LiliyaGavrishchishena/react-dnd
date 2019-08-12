@@ -6,11 +6,15 @@ export default [
     path: routes.CONSTRUCTOR,
   },
   {
-    name: 'Results',
-    path: routes.RESULTS,
+    name: 'Editor',
+    path: routes.EDITOR,
   },
   {
-    name: 'Filling of form',
-    path: routes.FORM,
+    name: 'Reports',
+    path: routes.REPORTS,
+  },
+  {
+    name: 'User',
+    path: routes.USER,
   },
 ];

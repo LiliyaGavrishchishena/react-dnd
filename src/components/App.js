@@ -8,10 +8,10 @@ import navItems from '../configs/main-nav';
 import constants from '../configs/constants';
 
 // components
-import Dashboard from './Dashboard';
-import ConstructorPage from '../pages/ConstructorPage';
-import ResultsPage from '../pages/ResultsPage';
-import FormPage from '../pages/FormPage';
+import Dashboard from './Dashboard/Dashboard';
+import EditorPage from '../pages/EditorPage';
+import ReportsPage from '../pages/ReportsPage';
+import UserPage from '../pages/UserPage';
 
 import { formsSelectors, formsOperations } from '../redux';
 
@@ -42,10 +42,10 @@ class App extends Component {
         <Dashboard items={navItems} />
 
         <Switch>
-          <Route exact path={routes.CONSTRUCTOR} component={ConstructorPage} />
-          <Route exact path={routes.RESULTS} component={ResultsPage} />
-          <Route exact path={routes.FORM} component={FormPage} />
-          <Redirect to="/form" />
+          <Route exact path={routes.EDITOR} component={EditorPage} />
+          <Route exact path={routes.REPORTS} component={ReportsPage} />
+          <Route exact path={routes.USER} component={UserPage} />
+          <Redirect to="/constructor" />
         </Switch>
       </div>
     );

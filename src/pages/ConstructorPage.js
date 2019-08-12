@@ -1,7 +1,10 @@
 import React from 'react';
+import Main from '../components/Main/Main';
 
-const ConstructorPage = () => {
-  return <div>ConstructorPage</div>;
-};
+const ConstructorPage = () => (
+  <div>
+    <Main />
+  </div>
+);
 
 export default ConstructorPage;

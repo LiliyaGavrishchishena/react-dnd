@@ -1,5 +1,6 @@
 export default Object.freeze({
   CONSTRUCTOR: '/constructor',
-  RESULTS: '/results',
-  FORM: '/form',
+  EDITOR: '/editor',
+  REPORTS: '/reports',
+  USER: '/user',
 });
