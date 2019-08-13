@@ -1,4 +1,4 @@
-const getForms = state => state.forms.data;
+const getForms = state => state.forms;
 const getFormsLength = state => state.forms.length;
 
 export default {

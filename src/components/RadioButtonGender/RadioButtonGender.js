@@ -18,6 +18,9 @@ const useStyles = makeStyles(theme => ({
   group: {
     margin: theme.spacing(1, 0),
   },
+  label: {
+    color: '#97c05c',
+  },
 }));
 
 export default function RadioButtonsGroup() {

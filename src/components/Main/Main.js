@@ -104,15 +104,13 @@ export default function Main() {
     <main className={classes.content}>
       <Container maxWidth="lg" className={classes.container}>
         <Grid container spacing={3}>
-          <Grid item>
+          <Grid item xs={6}>
             <Paper>
               <Constructor />
             </Paper>
           </Grid>
-          <Grid item>
-            <Paper className={classes.paper}>
-              <Forms />
-            </Paper>
+          <Grid item xs={6}>
+            <Forms />
           </Grid>
         </Grid>
       </Container>

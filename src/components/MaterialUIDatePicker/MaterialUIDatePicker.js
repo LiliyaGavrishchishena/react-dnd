@@ -23,7 +23,7 @@ export default function MaterialUIDatePicker() {
         format="MM/dd/yyyy"
         margin="normal"
         id="date-picker-inline"
-        label="Date picker inline"
+        label="Year of birth"
         value={selectedDate}
         onChange={handleDateChange}
         KeyboardButtonProps={{

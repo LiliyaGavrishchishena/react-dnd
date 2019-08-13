@@ -18,7 +18,7 @@ export default function SwitchNews() {
 
   return (
     <FormControl component="fieldset">
-      <FormLabel component="legend">Get news on emai</FormLabel>
+      <FormLabel component="legend">Get news on email</FormLabel>
       <FormGroup>
         <FormControlLabel
           control={

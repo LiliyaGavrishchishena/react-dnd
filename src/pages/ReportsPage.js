@@ -1,5 +1,10 @@
 import React from 'react';
+import Reports from '../components/Reports/Reports';
 
-const ResultsPage = () => <div>ResultsPage</div>;
+const ReportsPage = () => (
+  <div>
+    <Reports />
+  </div>
+);
 
-export default ResultsPage;
+export default ReportsPage;

@@ -34,14 +34,20 @@ const styles = theme => ({
   drawerPaper: {
     position: 'relative',
     width: drawerWidth,
+    background: '#535454',
+    color: '#fff',
   },
   content: {
+    height: '100vh',
     flexGrow: 1,
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing.unit * 3,
     minWidth: 0,
   },
   toolbar: theme.mixins.toolbar,
+  menuItemIcon: {
+    color: '#fff',
+  },
 });
 
 const history = createBrowserHistory();
@@ -61,28 +67,28 @@ const Routes = props => {
           >
             <List>
               <ListItem button component={Link} to="/constructor">
-                <ListItemIcon>
+                <ListItemIcon className={classes.menuItemIcon}>
                   <MoveToInbox />
                 </ListItemIcon>
                 <ListItemText primary="Constructor" />
               </ListItem>
 
               <ListItem button component={Link} to="/editor">
-                <ListItemIcon>
+                <ListItemIcon className={classes.menuItemIcon}>
                   <CheckCircle />
                 </ListItemIcon>
                 <ListItemText primary="Editor" />
               </ListItem>
 
               <ListItem button component={Link} to="/reports">
-                <ListItemIcon>
+                <ListItemIcon className={classes.menuItemIcon}>
                   <Star />
                 </ListItemIcon>
                 <ListItemText primary="Reports" />
               </ListItem>
 
               <ListItem button component={Link} to="/user">
-                <ListItemIcon>
+                <ListItemIcon className={classes.menuItemIcon}>
                   <Send />
                 </ListItemIcon>
                 <ListItemText primary="User" />

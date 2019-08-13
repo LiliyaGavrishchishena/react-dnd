@@ -29,13 +29,14 @@ export default function Constructor() {
           <TextInputName />
         </Grid>
         <Grid item>
+          <MaterialUIDatePicker />
+        </Grid>
+        <Grid item>
           <RadioButtonGender />
         </Grid>
+
         <Grid item>
           <SwitchNews />
-        </Grid>
-        <Grid item>
-          <MaterialUIDatePicker />
         </Grid>
       </Grid>
     </React.Fragment>
