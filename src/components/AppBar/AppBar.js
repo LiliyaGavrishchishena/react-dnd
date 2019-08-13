@@ -6,7 +6,6 @@ import {
   Drawer,
   AppBar,
   Toolbar,
-  List,
   Typography,
   Divider,
   IconButton,
@@ -15,8 +14,6 @@ import {
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import mainListItems from '../listItems';
-import ConstructorPage from '../../pages/ConstructorPage';
 
 const drawerWidth = 240;
 
@@ -99,7 +96,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function Dashboard() {
+export default function ButtonAppBar() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
   const handleDrawerOpen = () => {
@@ -158,10 +155,7 @@ export default function Dashboard() {
           </IconButton>
         </div>
         <Divider />
-        <List>{mainListItems}</List>
       </Drawer>
-
-      <ConstructorPage />
     </div>
   );
 }

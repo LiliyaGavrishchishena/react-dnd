@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Route, Switch, Redirect } from 'react-router-dom';
 
 // configs
-import routes from '../configs/routes';
-import navItems from '../configs/main-nav';
 import constants from '../configs/constants';
 
 // components
-import Dashboard from './Dashboard/Dashboard';
-import EditorPage from '../pages/EditorPage';
-import ReportsPage from '../pages/ReportsPage';
-import UserPage from '../pages/UserPage';
+import AppBar from './AppBar/AppBar';
+import Routes from '../routes/index';
 
 import { formsSelectors, formsOperations } from '../redux';
 
@@ -39,14 +34,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Dashboard items={navItems} />
-
-        <Switch>
-          <Route exact path={routes.EDITOR} component={EditorPage} />
-          <Route exact path={routes.REPORTS} component={ReportsPage} />
-          <Route exact path={routes.USER} component={UserPage} />
-          <Redirect to="/constructor" />
-        </Switch>
+        <AppBar />
+        <Routes />
       </div>
     );
   }
